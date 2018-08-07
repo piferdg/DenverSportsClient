@@ -1,28 +1,27 @@
 .App {
+  color: oldlace;
+  background: url('./assets/coorsField.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw ;
+  background-attachment: fixed;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.header {
+  display: flex;
+  
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.header-text {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  color: darkorchid;
+  padding-left: 250px
 }
 
-.App-title {
-  font-size: 1.5em;
+.players {
+ 
 }
 
-.App-intro {
-  font-size: large;
-}
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}

@@ -8,7 +8,7 @@ const Body = (props) => {
   })
 
   return (
-    <div>
+    <div className='players'>
       {playerInfo}
     </div>
   )

@@ -26,12 +26,14 @@ class App extends Component {
     return (
       <div className="App">
         <Header src={logo} />
+        <div>
         {this.state.gotData
           ?
           <Body player={this.state.allPlayers} />
           :
           <h2>Loading, hang tight!</h2>
         }
+        </div>
       </div>
     );
   }
