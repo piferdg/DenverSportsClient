@@ -30,41 +30,39 @@ class PlayerForm extends Component {
       body: JSON.stringify(this.state)
     })
       .then(() => this.props.fetchPlayers())
+      this.setState({ 
+        firstname: [],
+        lastname: [],
+        position: [] 
+      })
   }
 
   render() {
     return (
-      <div className="form" onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit}>
         <h3>Add a Player</h3>
-        <div>
-          <label htmlFor="player-first-name">Player First Name: </label>
-          <input id="player-first-name"
-            type="text"
-            value={this.state.firstname}
-            onChange={this.handleChange}
-            name='firstname' />
-        </div>
-        <div>
-          <label htmlFor="player-last-name">Player Last Name: </label>
-          <input id="player-last-name"
-            type="text"
-            value={this.state.lastname}
-            onChange={this.handleChange}
-            name='lastname' />
-        </div>
-        <div>
-          <label htmlFor="position">Position: </label>
-          <input id="position"
-            type="text"
-            value={this.state.position}
-            onChange={this.handleChange}
-            name='position' />
-        </div>
+        <label htmlFor="player-first-name">Player First Name: </label>
+        <input id="player-first-name"
+          type="text"
+          value={this.state.firstname}
+          onChange={this.handleChange}
+          name='firstname' />
+        <label htmlFor="player-last-name">Player Last Name: </label>
+        <input id="player-last-name"
+          type="text"
+          value={this.state.lastname}
+          onChange={this.handleChange}
+          name='lastname' />
+        <label htmlFor="position">Position: </label>
+        <input id="position"
+          type="text"
+          value={this.state.position}
+          onChange={this.handleChange}
+          name='position' />
         <button type="submit">Submit Player</button>
-      </div>
+      </form>
     )
   }
 }
-
 
 export default PlayerForm

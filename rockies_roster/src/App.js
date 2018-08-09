@@ -11,6 +11,16 @@ class App extends Component {
     allPlayers: [],
     gotData: false
   }
+  fetchPlayers = () => {
+    fetch(apiURL)
+      .then(response => response.json())
+      .then(myJSON => {
+        this.setState({
+          allPlayers: myJSON.players,
+          gotData: true
+        })
+      })
+  }
 
   deletePlayer = (event, playerId) => {
     console.log('PLAYER ID', playerId)
@@ -31,24 +41,12 @@ class App extends Component {
     })
   }
 
-
   addPlayerToGlobalState = (newPlayer) => {
     const currentPlayers = this.state.allPlayers
     const updatedPlayers = this.state.allPlayers.concat(newPlayer)
     this.setState({
       allPlayers: updatedPlayers
     })
-  }
-
-  fetchPlayers = () => {
-    fetch(apiURL)
-      .then(response => response.json())
-      .then(myJSON => {
-        this.setState({
-          allPlayers: myJSON.players,
-          gotData: true
-        })
-      })
   }
 
   componentDidMount() {
@@ -61,13 +59,13 @@ class App extends Component {
         <Header src={logo} />
         <PlayerForm addPlayerToGlobalState={this.addPlayerToGlobalState}
           fetchPlayers={this.fetchPlayers} />
-          {this.state.gotData
-            ?
-            <PlayerList player={this.state.allPlayers}
-              deletePlayer={this.deletePlayer} />
-            :
-            <h2>Loading, hang tight!</h2>
-          }
+        {this.state.gotData
+          ?
+          <PlayerList player={this.state.allPlayers}
+            deletePlayer={this.deletePlayer} />
+          :
+          <h2>Loading, hang tight!</h2>
+        }
       </div>
     );
   }
