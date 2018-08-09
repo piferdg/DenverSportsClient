@@ -3,7 +3,8 @@ import logo from './assets/rockiesLogo.png';
 import './App.css';
 import Header from './components/Header'
 import PlayerList from './components/PlayerList'
-import PlayerForm from './components/PlayerForm';
+import PlayerForm from './components/PlayerForm'
+import Footer from './components/Footer'
 const apiURL = ('https://rockies-active.herokuapp.com/players')
 
 class App extends Component {
@@ -66,8 +67,9 @@ class App extends Component {
           :
           <h2>Loading, hang tight!</h2>
         }
+      <Footer />
       </div>
-    );
+    )
   }
 }
 
