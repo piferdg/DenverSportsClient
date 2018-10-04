@@ -1,4 +1,5 @@
 # Rockies Roster App
+![logo](https://github.com/piferdg/DenverSportsClient/blob/master/rockies_roster/src/assets/rockiesLogo.png)
 
 ## Add and subtract your favorite Colorado Rockies players from the Big Leagues!  
 
