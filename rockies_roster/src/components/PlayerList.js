@@ -8,6 +8,7 @@ const PlayerList = (props) => {
             playerFirstName={individualPlayer.firstname}
             playerLastName={individualPlayer.lastname}
             playerPosition={individualPlayer.position}
+            playerImage={individualPlayer.image}
             deletePlayer={props.deletePlayer} /> 
   })
 

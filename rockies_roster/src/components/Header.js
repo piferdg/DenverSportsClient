@@ -5,8 +5,8 @@ const Header = (props) => {
         <div className="header">
             <img src={props.src} alt="Colorado logo" />
             <div className='header-text'>
-                <h2>2018 Colorado Rockies Lineup Card</h2>
-                <p>Add, remove, and edit players!</p>
+                <h2>Colorado Rockies Lineup Card</h2>
+                <p>Add and remove players from the roster!</p>
             </div>
         </div>
 
