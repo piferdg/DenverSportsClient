@@ -50,14 +50,14 @@ class PlayerForm extends Component {
         {this.state.gotData
           ?
           <Alert color="success">
-            Your country has been added!
+            Your player has been added!
           </Alert>
           :
           null
         }
         <NavLink to='/'>
           <div className='home-button-player-form-page'>
-            <Button color='primary'>Home</Button>
+            <Button className='home-link-button' color='primary'>Home</Button>
           </div>
         </NavLink>
         <div className='player-form-container'>
@@ -91,12 +91,21 @@ class PlayerForm extends Component {
               onChange={this.handleChange}
               placeholder='Image URL..'
               name='image' />
-            <div className='add-player-button'>
-              <Button
-                color="success"
-                type='submit'
-                name='submit'
-                value='Add Player'>Add Player</Button>
+            <div className='new-player-form-buttons'>
+              <div className='add-player-button-playerform'>
+                <Button className='add-new-player-button'
+                  color="success"
+                  type='submit'
+                  name='submit'
+                  value='Add Player'>Add Player</Button>
+              </div>
+              <div>
+                <NavLink to='/'>
+                  <div className='home-link-on-playerform-page'>
+                    <Button className='back-to-home-button' color="primary">Return Home</Button>
+                  </div>
+                </NavLink>
+              </div>
             </div>
           </form>
         </div>

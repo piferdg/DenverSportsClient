@@ -14,21 +14,35 @@ body {
   overscroll-behavior: none;
 }
 
+/* /////////////////////////////////////////////// Home ////////////////////////////////// */
+
+.home-page h2 {
+  text-align: center;
+}
+
+.add-player-button {
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+
 /* /////////////////////////////////////////////// Header ////////////////////////////////// */
 .header {
   display: flex;
-  /* border: 1px solid black; */
+  border: 1px solid black;
+  background: rgb(249, 249, 249, 0.8);
+  align-items: center;
+  box-shadow: 8px 10px 30px black;
+  justify-content: space-evenly;
 }
 
 .header-text {
   display: flex;
-  align-content: center;
   flex-direction: column;
   color: darkorchid;
-  padding-left: 250px
+  text-align: center;
 }
 
-/* /////////////////////////////////////////////// Form ////////////////////////////////// */
+/* /////////////////////////////////////////////// Add New Player Form ////////////////////////////////// */
 
 .player-form-container {
   display: flex;
@@ -54,27 +68,52 @@ body {
   padding-top: 2vh;
 }
 
-.add-player-button {
+.new-player-form-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2vh;
+}
+
+.add-player-button-playerform {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1vh;
+}
+
+.home-link-button, .add-new-player-button {
+  box-shadow: 5px 8px 30px black;
+}
+
+.home-link-on-playerform-page {
+  display: flex;
+  justify-content: center;
+}
+
+.home-button-player-form-page {
+  padding-left: 2vw;
   padding-top: 2vh;
 }
 
 
-/* /////////////////////////////////////////////// Players ////////////////////////////////// */
+/* /////////////////////////////////////////////// Player Cards ////////////////////////////////// */
 
 .players {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 2%;
-  justify-content: 
 }
 
 .player {
-    border: 1px solid black;
-    background: rgb(249, 249, 249, 0.8);
-    margin-bottom: 2vh;
-    padding: 3%;
-    box-shadow: 8px 10px 30px black;
+  background: rgb(249, 249, 249, 0.8);
+  margin: 1%;
+  padding:2%;
+  box-shadow: 8px 10px 30px black;
+  width: 22vw;
+}
+
+.player-card-image {
+  height: 47vh;
 }
 
 .player-firstname-lastname {
@@ -83,11 +122,77 @@ body {
 
 .player-position {
   color: black;
+  padding-bottom: 2vh;
 }
+
+.update-and-delete-country-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.update-player-button-on-player-card, .delete-player-button{
+  box-shadow: 8px 10px 30px black;
+}
+
+
+/* /////////////////////////////////////////////// Update Player ////////////////////////////////// */
+
+.player-update-container {
+  display: flex;
+  justify-content: center;
+}
+
+.update-player-form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  padding: 2%;
+  background: rgb(249, 249, 249, 0.8);
+  box-shadow: 8px 10px 30px black;
+}
+
+.update-player-form h3 {
+  text-align: center;
+  color: black;
+}
+
+.update-player-form label {
+  color: black;
+  padding-top: 2vh;
+}
+
+.update-form-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2vh;
+}
+
+.player-update-submit-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1vh;
+}
+
+.home-link-on-update-page {
+  display: flex;
+  justify-content: center;
+}
+
+.back-to-home-button, .update-player-button{
+  box-shadow: 5px 8px 30px black;
+}
+
+.back-to-home-navlink {
+  padding-top: 2vh;
+  padding-left: 2vw;
+}
+
 
 /* /////////////////////////////////////////////// Footer ////////////////////////////////// */
 
 .footer {
+  color: black;
   display: flex;
   position: absolute;
   bottom: 0%;
