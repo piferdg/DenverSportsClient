@@ -10,7 +10,7 @@ const Player = (props) => {
         <CardImg className='player-card-image' src={props.playerImage} alt="Player Headshot" />
         <CardBody>
           <CardTitle className='player-firstname-lastname'>{props.playerFirstName} {props.playerLastName}</CardTitle>
-          <CardSubtitle className='player-position'>Position: {props.playerPosition}</CardSubtitle>
+          <CardSubtitle className='player-position'>{props.playerPosition}</CardSubtitle>
           <div className='update-and-delete-country-buttons'>
             <div className='navlink-update-button'>
               <NavLink to={'/player/update/' + props.playerId}>

@@ -105,11 +105,15 @@ body {
 }
 
 .player {
-  background: rgb(249, 249, 249, 0.8);
+  background-image: url('./assets/topps_card_temlate.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;  
+  width: auto;
+  height: 73vh;
   margin: 1%;
-  padding:2%;
+  padding:1%;
+  padding-right: .63vw;
   box-shadow: 8px 10px 30px black;
-  width: 22vw;
 }
 
 .player-card-image {
@@ -117,12 +121,14 @@ body {
 }
 
 .player-firstname-lastname {
+  font-family: 'Permanent Marker', cursive;
   color: black;
 }
 
 .player-position {
   color: black;
   padding-bottom: 2vh;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .update-and-delete-country-buttons {
@@ -132,6 +138,13 @@ body {
 
 .update-player-button-on-player-card, .delete-player-button{
   box-shadow: 8px 10px 30px black;
+}
+
+.card-body {
+  background-image: url('./assets/topps-logo-png-transparent.png');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: -13%
 }
 
 
