@@ -105,11 +105,8 @@ body {
 }
 
 .player {
-  background-image: url('./assets/topps_card_temlate.png');
+  background-color: rgb(57, 33, 99, 0.7);
   background-repeat: no-repeat;
-  background-size: 100% 100%;  
-  width: auto;
-  height: 73vh;
   margin: 1%;
   padding:1%;
   padding-right: .63vw;
